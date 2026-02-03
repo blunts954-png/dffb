@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XNGD74ZHB4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XNGD74ZHB4');
+</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Contact DFFB | Crisis Senior Placement & ALWP Help | Bakersfield</title>
+    <meta name="description" content="Facing a forced hospital discharge or housing crisis? Call DFFB 24/7. We stop families from making irreversible senior placement mistakes. ALWP specialists.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-void: #0a0a0f;
+            --bg-elevated: #111118;
+            --gold: #C9A227;
+            --gold-dim: #8B7355;
+            --text-primary: #f5f5f0;
+            --text-secondary: #9ca3af;
+            --text-muted: #6b7280;
+            --accent-red: #dc2626;
+            --border: rgba(201, 162, 39, 0.15);
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background-color: var(--bg-void);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding-top: 70px;
+        }
+
+        h1, h2, h3 { 
+            font-family: 'Crimson Pro', Georgia, serif; 
+            font-weight: 400;
+            letter-spacing: -0.02em;
+        }
+
+        header {
+            position: fixed; top: 0; width: 100%;
+            background: rgba(10, 10, 15, 0.95);
+            backdrop-filter: blur(12px);
+            padding: 0 5%;
+            z-index: 1000;
+            display: flex; justify-content: space-between; align-items: center;
+            height: 70px;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .logo-group { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+        .logo-img { height: 36px; width: auto; filter: brightness(0.9); }
+        .brand-name { 
+            font-family: 'Crimson Pro', serif; 
+            font-size: 1.4rem; 
+            font-weight: 600; 
+            color: var(--gold); 
+            letter-spacing: 0.5px; 
+        }
+
+        .nav-links { display: flex; gap: 32px; align-items: center; }
+        .nav-link { 
+            color: var(--text-secondary); 
+            font-weight: 500; 
+            font-size: 0.85rem; 
+            text-transform: uppercase; 
+            letter-spacing: 1.5px; 
+            transition: color 0.2s;
+            text-decoration: none;
+        }
+        .nav-link:hover { color: var(--text-primary); }
+        
+        .btn-primary {
+            background: transparent;
+            color: var(--gold);
+            padding: 10px 20px;
+            border: 1px solid var(--gold);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-size: 0.75rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .btn-primary:hover { 
+            background: var(--gold); 
+            color: var(--bg-void);
+        }
+
+        .btn-emergency {
+            background: var(--accent-red);
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-size: 0.75rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        /* EMERGENCY BAR */
+        .emergency-bar {
+            background: var(--accent-red);
+            color: white;
+            text-align: center;
+            padding: 16px 5%;
+            font-size: 0.9rem;
+        }
+
+        .emergency-bar strong {
+            font-weight: 600;
+        }
+
+        .emergency-bar a {
+            color: white;
+            font-weight: 600;
+            text-decoration: underline;
+        }
+
+        /* CONTACT GRID */
+        .contact-section {
+            padding: 80px 5%;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 80px;
+            max-width: 1100px;
+            margin: 0 auto;
+            align-items: start;
+        }
+
+        .contact-info h1 {
+            font-size: clamp(2rem, 4vw, 2.75rem);
+            margin-bottom: 24px;
+            line-height: 1.1;
+        }
+
+        .contact-info > p {
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+            margin-bottom: 40px;
+            max-width: 400px;
+        }
+
+        .contact-method {
+            margin-bottom: 32px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .contact-method:last-of-type {
+            border-bottom: none;
+        }
+
+        .contact-label {
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--gold);
+            margin-bottom: 8px;
+        }
+
+        .contact-value {
+            font-family: 'Crimson Pro', serif;
+            font-size: 1.5rem;
+            color: var(--text-primary);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .contact-note {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        /* FORM */
+        .form-container {
+            background: var(--bg-elevated);
+            border: 1px solid var(--border);
+            padding: 48px;
+        }
+
+        .form-header {
+            margin-bottom: 32px;
+        }
+
+        .form-header h2 {
+            font-size: 1.5rem;
+            margin-bottom: 8px;
+        }
+
+        .form-header p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .form-group {
+            margin-bottom: 24px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 14px 16px;
+            background: var(--bg-void);
+            border: 1px solid var(--border);
+            color: var(--text-primary);
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95rem;
+            transition: border-color 0.2s;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--gold);
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: var(--text-muted);
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .urgency-options {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+        }
+
+        .urgency-option {
+            position: relative;
+        }
+
+        .urgency-option input {
+            position: absolute;
+            opacity: 0;
+        }
+
+        .urgency-label {
+            display: block;
+            padding: 16px 12px;
+            background: var(--bg-void);
+            border: 1px solid var(--border);
+            text-align: center;
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .urgency-option input:checked + .urgency-label {
+            border-color: var(--accent-red);
+            background: rgba(220, 38, 38, 0.1);
+        }
+
+        .urgency-option input:checked + .urgency-label.urgency-24h {
+            border-color: var(--accent-red);
+            background: rgba(220, 38, 38, 0.15);
+            color: var(--text-primary);
+        }
+
+        .consent-box {
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+            margin-bottom: 24px;
+        }
+
+        .consent-box input {
+            margin-top: 4px;
+        }
+
+        .consent-box label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+
+        .consent-box a {
+            color: var(--gold);
+            text-decoration: none;
+        }
+
+        .submit-btn {
+            width: 100%;
+            background: var(--gold);
+            color: var(--bg-void);
+            padding: 16px;
+            border: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .submit-btn:hover {
+            background: var(--text-primary);
+        }
+
+        /* WHAT HAPPENS NEXT */
+        .next-section {
+            background: var(--bg-elevated);
+            padding: 80px 5%;
+            border-top: 1px solid var(--border);
+        }
+
+        .next-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .next-content h2 {
+            font-size: 1.75rem;
+            margin-bottom: 40px;
+        }
+
+        .timeline {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 10%;
+            right: 10%;
+            height: 1px;
+            background: var(--border);
+        }
+
+        .timeline-step {
+            flex: 1;
+            text-align: center;
+            position: relative;
+        }
+
+        .timeline-dot {
+            width: 40px;
+            height: 40px;
+            background: var(--bg-elevated);
+            border: 2px solid var(--gold);
+            border-radius: 50%;
+            margin: 0 auto 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            color: var(--gold);
+            position: relative;
+            z-index: 1;
+        }
+
+        .timeline-step h4 {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .timeline-step p {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            max-width: 180px;
+            margin: 0 auto;
+        }
+
+        /* FOOTER */
+        footer {
+            background: var(--bg-void);
+            padding: 40px 5%;
+            border-top: 1px solid var(--border);
+            text-align: center;
+        }
+
+        footer p {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 900px) {
+            .contact-grid { grid-template-columns: 1fr; }
+            .form-row { grid-template-columns: 1fr; }
+            .urgency-options { grid-template-columns: 1fr; }
+            .timeline { flex-direction: column; gap: 32px; }
+            .timeline::before { display: none; }
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo-group">
+            <img src="logo.png" alt="DFFB" class="logo-img">
+            <span class="brand-name">DFFB</span>
+        </a>
+        <nav class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">Our Approach</a>
+            <a href="alwp.html" class="nav-link">ALWP Guide</a>
+            <a href="faq.html" class="nav-link">FAQ</a>
+            <a href="partner.html" class="nav-link">For Facilities</a>
+        </nav>
+        <a href="tel:+16614482386" class="btn-emergency">Call Now</a>
+    </header>
+
+    <div class="emergency-bar">
+        <strong>24-Hour Crisis Line:</strong> If you're facing discharge in 24-48 hours, call <a href="tel:+16614482386">(661) 448-2386</a> immediately.
+    </div>
+
+    <section class="contact-section">
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h1>Don't Make the Irreversible Mistake.</h1>
+                <p>The call is free. The advice might save you from a placement that collapses in 90 days—or costs you Medi-Cal eligibility forever.</p>
+                
+                <div class="contact-method">
+                    <div class="contact-label">Crisis Line (24/7)</div>
+                    <a href="tel:+16614482386" class="contact-value">(661) 448-2386</a>
+                    <p class="contact-note">For forced discharges, housing violations, or imminent caregiver collapse. Call anytime.</p>
+                </div>
+                
+                <div class="contact-method">
+                    <div class="contact-label">Office</div>
+                    <span class="contact-value">1712 19th Street, Suite 216</span>
+                    <p class="contact-note">Bakersfield, CA 93301</p>
+                </div>
+                
+                <div class="contact-method">
+                    <div class="contact-label">Email</div>
+                    <a href="mailto:info@dffbmanagementgroup.com" class="contact-value">info@dffbmanagementgroup.com</a>
+                    <p class="contact-note">Response within 4 hours during business hours. For crises, please call.</p>
+                </div>
+            </div>
+            
+            <div class="form-container">
+                <div class="form-header">
+                    <h2>Tell Us Your Situation</h2>
+                    <p>Be direct. We need the real timeline, not the polite version.</p>
+                </div>
+                
+                <form action="https://formspree.io/f/xwvknjyb" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="relationship">Your Role</label>
+                            <select id="relationship" name="relationship" required>
+                                <option value="">Select...</option>
+                                <option value="daughter">Daughter</option>
+                                <option value="son">Son</option>
+                                <option value="spouse">Spouse</option>
+                                <option value="other_family">Other Family</option>
+                                <option value="professional">Medical Professional</option>
+                                <option value="facility">Facility Owner</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="(661) 555-0123">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="you@example.com">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Urgency Level</label>
+                        <div class="urgency-options">
+                            <div class="urgency-option">
+                                <input type="radio" id="urgent-24h" name="urgency" value="24h" required>
+                                <label for="urgent-24h" class="urgency-label urgency-24h">24-48 Hours<br><small>Discharge/ Crisis</small></label>
+                            </div>
+                            <div class="urgency-option">
+                                <input type="radio" id="urgent-week" name="urgency" value="1week">
+                                <label for="urgent-week" class="urgency-label">1-2 Weeks</label>
+                            </div>
+                            <div class="urgency-option">
+                                <input type="radio" id="urgent-planning" name="urgency" value="planning">
+                                <label for="urgent-planning" class="urgency-label">Planning Ahead</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="situation">The Situation (Be Direct)</label>
+                        <textarea id="situation" name="situation" rows="5" placeholder="Example: Mom is being discharged from Memorial Hospital Friday. She needs ALWP-qualified placement. Current facility issued 30-day notice. I'm terrified of choosing wrong..." required></textarea>
+                    </div>
+                    
+                    <div class="consent-box">
+                        <input type="checkbox" id="consent" name="sms_consent" value="yes" required>
+                        <label for="consent">I consent to receive calls and SMS messages from DFFB regarding my inquiry. I understand message & data rates may apply. Reply STOP to opt out. See our <a href="privacy.html">Privacy Policy</a>.</label>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Request Crisis Consultation</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="next-section">
+        <div class="next-content">
+            <h2>What Happens After You Contact Us</h2>
+            
+            <div class="timeline">
+                <div class="timeline-step">
+                    <div class="timeline-dot">1</div>
+                    <h4>Immediate Response</h4>
+                    <p>Crisis calls returned within 1 hour. All others within 4 hours.</p>
+                </div>
+                <div class="timeline-step">
+                    <div class="timeline-dot">2</div>
+                    <h4>Situation Assessment</h4>
+                    <p>We diagnose the real timeline and identify compliance risks.</p>
+                </div>
+                <div class="timeline-step">
+                    <div class="timeline-dot">3</div>
+                    <h4>Strategic Plan</h4>
+                    <p>You get clarity on what NOT to do, plus viable options.</p>
+                </div>
+                <div class="timeline-step">
+                    <div class="timeline-dot">4</div>
+                    <h4>Placement & Follow-Up</h4>
+                    <p>We stay involved until the bed stabilizes—not just move-in day.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 DFFB Management Group. Crisis placement & ALWP specialists serving Kern County.</p>
+    </footer>
+
+</body>
+</html>

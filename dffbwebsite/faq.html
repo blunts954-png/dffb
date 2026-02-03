@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XNGD74ZHB4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XNGD74ZHB4');
+</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>FAQ | Uncomfortable Questions About Senior Placement | DFFB</title>
+    <meta name="description" content="The uncomfortable truths about senior placement. Why you shouldn't use Google, how we make money, and what we refuse to promise. Real answers for crisis situations.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-void: #0a0a0f;
+            --bg-elevated: #111118;
+            --gold: #C9A227;
+            --gold-dim: #8B7355;
+            --text-primary: #f5f5f0;
+            --text-secondary: #9ca3af;
+            --text-muted: #6b7280;
+            --accent-red: #dc2626;
+            --border: rgba(201, 162, 39, 0.15);
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background-color: var(--bg-void);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding-top: 70px;
+        }
+
+        h1, h2, h3 { 
+            font-family: 'Crimson Pro', Georgia, serif; 
+            font-weight: 400;
+            letter-spacing: -0.02em;
+        }
+
+        header {
+            position: fixed; top: 0; width: 100%;
+            background: rgba(10, 10, 15, 0.95);
+            backdrop-filter: blur(12px);
+            padding: 0 5%;
+            z-index: 1000;
+            display: flex; justify-content: space-between; align-items: center;
+            height: 70px;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .logo-group { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+        .logo-img { height: 36px; width: auto; filter: brightness(0.9); }
+        .brand-name { 
+            font-family: 'Crimson Pro', serif; 
+            font-size: 1.4rem; 
+            font-weight: 600; 
+            color: var(--gold); 
+            letter-spacing: 0.5px; 
+        }
+
+        .nav-links { display: flex; gap: 32px; align-items: center; }
+        .nav-link { 
+            color: var(--text-secondary); 
+            font-weight: 500; 
+            font-size: 0.85rem; 
+            text-transform: uppercase; 
+            letter-spacing: 1.5px; 
+            transition: color 0.2s;
+            text-decoration: none;
+        }
+        .nav-link:hover { color: var(--text-primary); }
+        .nav-link.active { color: var(--gold); }
+        
+        .btn-primary {
+            background: transparent;
+            color: var(--gold);
+            padding: 10px 20px;
+            border: 1px solid var(--gold);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-size: 0.75rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .btn-primary:hover { 
+            background: var(--gold); 
+            color: var(--bg-void);
+        }
+
+        .btn-emergency {
+            background: var(--accent-red);
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-size: 0.75rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        /* PAGE HEADER */
+        .page-header {
+            padding: 100px 5% 60px;
+            border-bottom: 1px solid var(--border);
+            background: var(--bg-elevated);
+        }
+
+        .page-header-inner {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .page-tag {
+            color: var(--accent-red);
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+
+        .page-header h1 {
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            line-height: 1.1;
+            margin-bottom: 24px;
+        }
+
+        .page-header > p {
+            font-size: 1.15rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+        }
+
+        /* FAQ SECTIONS */
+        .faq-section {
+            padding: 80px 5%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-section.alt {
+            background: var(--bg-elevated);
+        }
+
+        .section-label {
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--gold);
+            margin-bottom: 40px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .faq-item {
+            margin-bottom: 48px;
+            padding-bottom: 48px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .faq-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .faq-question {
+            font-family: 'Crimson Pro', serif;
+            font-size: 1.35rem;
+            color: var(--text-primary);
+            margin-bottom: 16px;
+            line-height: 1.3;
+        }
+
+        .faq-answer {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        .faq-answer p {
+            margin-bottom: 16px;
+        }
+
+        .faq-answer strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .warning-box {
+            background: rgba(220, 38, 38, 0.08);
+            border-left: 3px solid var(--accent-red);
+            padding: 20px 24px;
+            margin: 20px 0;
+        }
+
+        .warning-box p {
+            color: var(--text-primary);
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        .truth-box {
+            background: rgba(201, 162, 39, 0.08);
+            border-left: 3px solid var(--gold);
+            padding: 20px 24px;
+            margin: 20px 0;
+        }
+
+        .truth-box p {
+            color: var(--text-primary);
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        /* CTA */
+        .cta-section {
+            padding: 100px 5%;
+            text-align: center;
+            border-top: 1px solid var(--border);
+        }
+
+        .cta-section h2 {
+            font-size: clamp(1.75rem, 3vw, 2.25rem);
+            margin-bottom: 20px;
+        }
+
+        .cta-section p {
+            color: var(--text-secondary);
+            max-width: 500px;
+            margin: 0 auto 40px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: var(--bg-elevated);
+            padding: 60px 5% 40px;
+            border-top: 1px solid var(--border);
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .footer-left {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        .footer-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            margin-left: 24px;
+            font-size: 0.85rem;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover { color: var(--text-primary); }
+
+        @media (max-width: 900px) {
+            .nav-links { display: none; }
+            .footer-content { flex-direction: column; gap: 20px; text-align: center; }
+            .footer-links a { margin: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo-group">
+            <img src="logo.png" alt="DFFB" class="logo-img">
+            <span class="brand-name">DFFB</span>
+        </a>
+        <nav class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">Our Approach</a>
+            <a href="alwp.html" class="nav-link">ALWP Guide</a>
+            <a href="faq.html" class="nav-link active">FAQ</a>
+            <a href="partner.html" class="nav-link">For Facilities</a>
+            <a href="contact.html" class="btn-primary">Contact</a>
+        </nav>
+        <a href="contact.html" class="btn-emergency">Emergency</a>
+    </header>
+
+    <section class="page-header">
+        <div class="page-header-inner">
+            <div class="page-tag">Uncomfortable Questions</div>
+            <h1>The Answers Other Agencies Won't Give You</h1>
+            <p>We believe in radical transparency. If you're about to trust someone with one of the most consequential decisions of your life, you deserve the truth—not marketing.</p>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="section-label">The Uncomfortable Truths</div>
+        
+        <div class="faq-item">
+            <h3 class="faq-question">Why shouldn't I just use Google to find a facility?</h3>
+            <div class="faq-answer">
+                <p><strong>Google shows marketing.</strong> You see beautiful websites, stock photos of smiling seniors, and facilities that have optimized for SEO, not outcomes.</p>
+                <p>What you don't see: Which facilities are in financial distress. Which ones have high staff turnover. Which ones look great on a tour but fall apart 90 days after move-in.</p>
+                <div class="truth-box">
+                    <p><strong>What we do differently:</strong> We explain failure modes. We tell you which facilities are about to lose their license, which owners are cutting corners, and which placements are statistically likely to fail.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <h3 class="faq-question">How do you make money? What's the catch?</h3>
+            <div class="faq-answer">
+                <p>We're paid referral fees by facilities when a placement is successful. This is standard in the industry.</p>
+                <p><strong>Here's the difference:</strong> Most agencies optimize for speed—get the placement done, collect the fee, move on. We optimize for fit and stability. If a placement fails, we don't get another referral from that family or facility.</p>
+                <div class="warning-box">
+                    <p><strong>Our incentive alignment:</strong> We only succeed when placements stick. That means saying no to bad fits even when money is on the table.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <h3 class="faq-question">Are you just going to send me to your "preferred" facilities?</h3>
+            <div class="faq-answer">
+                <p>No. We maintain relationships with facilities because we need to understand their operational reality—staffing levels, compliance history, resident capacity, and financial stability.</p>
+                <p>But we have sent families to facilities outside our network when that was the right fit. We've also told families to walk away from facilities we work with when the match wasn't right.</p>
+                <p>Our reputation depends on outcomes, not volume.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <h3 class="faq-question">What if I don't like what you tell me?</h3>
+            <div class="faq-answer">
+                <p>Then we're not for you, and that's okay.</p>
+                <p>We've told daughters that placing Mom now would be a mistake—that the guilt they're feeling is temporary, but a bad placement is permanent. We've told families that the "perfect" facility they toured won't accept ALWP residents, and they need to adjust expectations.</p>
+                <div class="truth-box">
+                    <p><strong>We sell clarity, not comfort.</strong> If you need someone to validate decisions you've already made, we're the wrong choice. If you need someone to stop you from making an irreversible mistake, call us.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section alt">
+        <div class="section-label">How We Work</div>
+        
+        <div class="faq-item">
+            <h3 class="faq-question">What happens when I call?</h3>
+            <div class="faq-answer">
+                <p><strong>First, we diagnose the real timeline.</strong> Is this a 24-hour emergency or perceived urgency? Is there a forced discharge happening, or do you have more time than you think?</p>
+                <p><strong>Second, we assess your systems.</strong> Are you ALWP-eligible? Medi-Cal pending? Private pay? One wrong move here disqualifies everything downstream.</p>
+                <p><strong>Third, we give you options.</strong> Sometimes that means immediate placement. Sometimes it means slowing down. Sometimes it means tough conversations about what's actually possible.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <h3 class="faq-question">How fast can you place someone?</h3>
+            <div class="faq-answer">
+                <p>In crisis situations, we've placed residents within 24-48 hours. But <strong>speed is not our primary metric—fit is.</strong></p>
+                <p>A rushed placement that fails in 90 days costs everyone: the family starts over, the facility deals with churn, and the resident suffers disruption.</p>
+                <p>We move as fast as responsibly possible. Sometimes that means 24 hours. Sometimes that means pushing back on an unrealistic discharge timeline.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <h3 class="faq-question">Do you only work with ALWP/Medi-Cal families?</h3>
+            <div class="faq-answer">
+                <p>No, we work with all payment types. However, we specialize in ALWP and Medi-Cal transitions because these are where families are most vulnerable to making irreversible mistakes.</p>
+                <p>ALWP eligibility is fragile. Timing matters more than intent. One wrong move can disqualify someone permanently. Most families only learn this after it's too late.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="section-label">What We Refuse to Promise</div>
+        
+        <div class="faq-item">
+            <h3 class="faq-question">Can you guarantee a specific facility?</h3>
+            <div class="faq-answer">
+                <p><strong>No.</strong> We can't guarantee availability at any specific facility. Bed availability changes daily.</p>
+                <p>What we can guarantee: We'll give you honest assessments of which facilities are likely to have openings, which are at capacity for months, and which are experiencing problems you should know about.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <h3 class="faq-question">Can you guarantee my loved one will be happy?</h3>
+            <div class="faq-answer">
+                <p><strong>No.</strong> Transitioning to senior housing is hard. Even in the best facilities, there's an adjustment period.</p>
+                <p>What we optimize for: Operational stability, appropriate care levels, and realistic expectations. We set families up for success—but we don't promise sunshine and rainbows.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <h3 class="faq-question">Can you guarantee ALWP/Medi-Cal approval?</h3>
+            <div class="faq-answer">
+                <p><strong>No.</strong> Eligibility determinations are made by government agencies, not us. We can guide you through the process and help you avoid disqualifying mistakes, but we cannot guarantee approval.</p>
+                <div class="warning-box">
+                    <p><strong>Red flag:</strong> Any agency that "guarantees" Medi-Cal approval is lying to you. The process has too many variables outside anyone's control.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <h2>Have More Questions?</h2>
+        <p>The call is free. The advice might save you from a placement that collapses in 90 days.</p>
+        <a href="contact.html" class="btn-emergency">Get In Touch</a>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                © 2025 DFFB Management Group. Crisis placement & ALWP specialists.
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">Approach</a>
+                <a href="alwp.html">ALWP</a>
+                <a href="partner.html">Facilities</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
