@@ -1,0 +1,8 @@
+# Other projects in this desktop folder (not part of dffb repo)
+kato web/
+onpager ad/
+
+# OS / editor noise
+Thumbs.db
+Desktop.ini
+*.lnk
