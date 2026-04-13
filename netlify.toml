@@ -1,0 +1,3 @@
+# Site files live in dffbwebsite/ — Netlify must publish that folder, not repo root.
+[build]
+  publish = "dffbwebsite"
