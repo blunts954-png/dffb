@@ -8,220 +8,123 @@
   gtag('js', new Date());
   gtag('config', 'G-XNGD74ZHB4');
 </script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms & Conditions | DFFB Senior Living</title>
-    
+    <title>Terms and Conditions | DFFB Senior Living</title>
+    <meta name="description" content="Terms and Conditions for DFFB Senior Living website and services.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-
-    <style>
-        :root {
-            --bg-void: #0a0a0f;
-            --bg-elevated: #111118;
-            --gold: #C9A227;
-            --gold-dim: #8B7355;
-            --text-primary: #f5f5f0;
-            --text-secondary: #9ca3af;
-            --text-muted: #6b7280;
-            --accent-red: #dc2626;
-            --border: rgba(201, 162, 39, 0.15);
-        }
-
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-
-        body {
-            font-family: 'Inter', -apple-system, sans-serif;
-            background-color: var(--bg-void);
-            color: var(--text-primary);
-            line-height: 1.7;
-            padding-top: 70px;
-        }
-
-        h1, h2, h3 { 
-            font-family: 'Crimson Pro', Georgia, serif; 
-            font-weight: 400;
-            letter-spacing: -0.02em;
-        }
-
-        header {
-            position: fixed; top: 0; width: 100%;
-            background: rgba(10, 10, 15, 0.95);
-            backdrop-filter: blur(12px);
-            padding: 0 5%;
-            z-index: 1000;
-            display: flex; justify-content: space-between; align-items: center;
-            height: 70px;
-            border-bottom: 1px solid var(--border);
-        }
-        
-        .logo-group { display: flex; align-items: center; gap: 12px; text-decoration: none; }
-        .logo-img { height: 36px; width: auto; filter: brightness(0.9); }
-        .brand-name { 
-            font-family: 'Crimson Pro', serif; 
-            font-size: 1.4rem; 
-            font-weight: 600; 
-            color: var(--gold); 
-            letter-spacing: 0.5px; 
-        }
-
-        .nav-link { 
-            color: var(--text-secondary); 
-            font-weight: 500; 
-            font-size: 0.85rem; 
-            text-transform: uppercase; 
-            letter-spacing: 1.5px; 
-            transition: color 0.2s;
-            text-decoration: none;
-        }
-        .nav-link:hover { color: var(--text-primary); }
-
-        .container { 
-            max-width: 800px; 
-            margin: 60px auto; 
-            padding: 0 5%;
-        }
-        
-        h1 { 
-            font-size: clamp(2rem, 4vw, 2.5rem); 
-            color: var(--text-primary); 
-            border-bottom: 1px solid var(--border); 
-            padding-bottom: 20px; 
-            margin-bottom: 30px; 
-        }
-        
-        h2 { 
-            font-size: 1.1rem; 
-            color: var(--gold); 
-            margin-top: 40px; 
-            margin-bottom: 16px;
-            text-transform: uppercase; 
-            letter-spacing: 1.5px; 
-            font-family: 'Inter', sans-serif;
-            font-weight: 600;
-        }
-        
-        p, ul { 
-            margin-bottom: 16px; 
-            color: var(--text-secondary); 
-            font-size: 0.95rem;
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-
-        li {
-            margin-bottom: 8px;
-        }
-
-        .effective-date {
-            color: var(--text-muted);
-            font-size: 0.85rem;
-            margin-bottom: 30px;
-        }
-
-        .warning-box {
-            background: rgba(220, 38, 38, 0.1);
-            border-left: 3px solid var(--accent-red);
-            padding: 20px;
-            margin: 30px 0;
-        }
-
-        .warning-box p {
-            color: var(--text-primary);
-            margin: 0;
-        }
-
-        footer { 
-            background-color: var(--bg-elevated); 
-            color: var(--text-muted); 
-            padding: 40px 5%; 
-            text-align: center; 
-            margin-top: 80px;
-            border-top: 1px solid var(--border);
-        }
-        
-        footer a { 
-            color: var(--text-secondary); 
-            text-decoration: none; 
-            margin: 0 15px; 
-            font-size: 0.85rem; 
-            transition: color 0.2s;
-        }
-
-        footer a:hover {
-            color: var(--text-primary);
-        }
-
-        @media (max-width: 768px) {
-            .container { margin: 40px auto; }
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <header>
-        <a href="index.html" class="logo-group">
-            <img src="logo.png" alt="DFFB" class="logo-img">
-            <span class="brand-name">DFFB</span>
-        </a>
-        <a href="index.html" class="nav-link">← Back to Home</a>
+    <div class="top-alert">
+        <strong>24-Hour Crisis Line:</strong> If you're facing a forced hospital discharge or housing violation, call
+        <a href="tel:+16614482386">(661) 448-2386</a>
+        <a class="emergency-link" href="contact.html">Emergency Placement</a>
+    </div>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="index.html">
+                <img src="dffb-logo.png" alt="DFFB Senior Living logo">
+                <span>DFFB SENIOR LIVING</span>
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">Menu</button>
+            <nav id="primary-nav" aria-label="Primary">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="how-it-works.html">How It Works</a>
+                <a href="families.html">For Families</a>
+                <a href="investors.html">For Investors</a>
+                <a href="contact.html">Contact</a>
+                <a href="contact.html" class="btn btn-danger">Emergency Placement</a>
+            </nav>
+        </div>
     </header>
 
-    <div class="container">
-        <h1>Terms and Conditions</h1>
-        <p class="effective-date"><strong>Effective Date:</strong> February 2025</p>
-        
-        <p>By accessing our website and services, you acknowledge and agree to these Terms and Conditions. We operate in crisis mode—ours and yours—so we keep this direct.</p>
+    <main>
+        <article class="card legal-prose">
+            <h1>Terms and Conditions</h1>
+            <p class="legal-meta"><strong>Effective Date:</strong> February 2025</p>
 
-        <div class="warning-box">
-            <p><strong>Medical Emergency Protocol:</strong> DFFB Senior Living provides placement referrals and operational consulting. We are not a medical provider. In a medical emergency, call <strong>911</strong> immediately.</p>
+            <p>By accessing our website and services, you acknowledge and agree to these Terms and Conditions. We operate in crisis mode—ours and yours—so we keep this direct.</p>
+
+            <div class="warning-box">
+                <p><strong>Medical Emergency Protocol:</strong> DFFB Senior Living provides placement referrals and operational consulting. We are not a medical provider. In a medical emergency, call <strong>911</strong> immediately.</p>
+            </div>
+
+            <h2>1. Nature of Services</h2>
+            <p>DFFB Senior Living provides senior placement assistance, facility operational consulting, and crisis intervention guidance. We do not provide medical care, legal advice, or guarantee placement at any specific facility.</p>
+
+            <h2>2. ALWP &amp; Medi-Cal Guidance</h2>
+            <p>We provide information about the Assisted Living Waiver Program (ALWP) and Medi-Cal eligibility based on our experience. However, eligibility determinations are made solely by the appropriate government agencies. We cannot guarantee approval or continued eligibility.</p>
+
+            <h2>3. Facility Vetting Limitations</h2>
+            <p>While we rigorously vet our facility partners, we cannot guarantee the ongoing performance of any third-party facility. Families retain responsibility for conducting their own due diligence and maintaining ongoing oversight of care.</p>
+
+            <h2>4. SMS Messaging Terms</h2>
+            <ul>
+                <li><strong>Consent:</strong> By providing your phone number and checking the consent box, you explicitly consent to receive SMS messages regarding your placement inquiry and related follow-up.</li>
+                <li><strong>Opt-Out:</strong> Reply <strong>STOP</strong> at any time to cancel SMS communications. You will receive one confirmation message.</li>
+                <li><strong>Help:</strong> Reply <strong>HELP</strong> for assistance or contact us at (661) 448-2386.</li>
+                <li><strong>Fees:</strong> Message and data rates may apply based on your carrier plan.</li>
+                <li><strong>Frequency:</strong> Message frequency varies based on your situation and urgency.</li>
+            </ul>
+
+            <h2>5. Limitation of Liability</h2>
+            <p>We strive for accuracy in all our guidance, but we make no warranties regarding specific clinical capabilities, regulatory compliance status, or financial outcomes of third-party facilities. Our liability is limited to the fees paid for our direct services.</p>
+
+            <h2>6. Confidentiality</h2>
+            <p>Information you share with us is treated as confidential and used solely for the purpose of assisting with your placement or operational needs. See our <a class="legal-link" href="privacy.html">Privacy Policy</a> for details.</p>
+
+            <h2>7. Contact</h2>
+            <p>DFFB Senior Living<br>
+            1712 19th Street Suite 216<br>
+            Bakersfield, CA 93301<br>
+            <a class="legal-link" href="tel:+16614482386">(661) 448-2386</a><br>
+            <a class="legal-link" href="mailto:info@dffbmanagementgroup.com">info@dffbmanagementgroup.com</a></p>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-col">
+                <p class="footer-heading">DFFB SENIOR LIVING</p>
+                <p class="footer-address">1712 19th Street Suite 216<br>Bakersfield, CA 93301</p>
+                <p><a href="tel:+16614482386">(661) 448-2386</a></p>
+                <p class="footer-sub">Christopher Moore · Senior Living Housing · <a href="https://dffbseniorliving.com" target="_blank" rel="noopener">dffbseniorliving.com</a></p>
+            </div>
+            <nav class="footer-nav" aria-label="Footer">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="how-it-works.html">How It Works</a>
+                <a href="families.html">For Families</a>
+                <a href="investors.html">For Investors</a>
+                <a href="contact.html">Contact</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="terms.html">Terms</a>
+            </nav>
         </div>
-
-        <h2>1. Nature of Services</h2>
-        <p>DFFB Senior Living provides senior placement assistance, facility operational consulting, and crisis intervention guidance. We do not provide medical care, legal advice, or guarantee placement at any specific facility.</p>
-
-        <h2>2. ALWP & Medi-Cal Guidance</h2>
-        <p>We provide information about the Assisted Living Waiver Program (ALWP) and Medi-Cal eligibility based on our experience. However, eligibility determinations are made solely by the appropriate government agencies. We cannot guarantee approval or continued eligibility.</p>
-
-        <h2>3. Facility Vetting Limitations</h2>
-        <p>While we rigorously vet our facility partners, we cannot guarantee the ongoing performance of any third-party facility. Families retain responsibility for conducting their own due diligence and maintaining ongoing oversight of care.</p>
-
-        <h2>4. SMS Messaging Terms</h2>
-        <ul>
-            <li><strong>Consent:</strong> By providing your phone number and checking the consent box, you explicitly consent to receive SMS messages regarding your placement inquiry and related follow-up.</li>
-            <li><strong>Opt-Out:</strong> Reply <strong>STOP</strong> at any time to cancel SMS communications. You will receive one confirmation message.</li>
-            <li><strong>Help:</strong> Reply <strong>HELP</strong> for assistance or contact us at (661) 448-2386.</li>
-            <li><strong>Fees:</strong> Message and data rates may apply based on your carrier plan.</li>
-            <li><strong>Frequency:</strong> Message frequency varies based on your situation and urgency.</li>
-        </ul>
-
-        <h2>5. Limitation of Liability</h2>
-        <p>We strive for accuracy in all our guidance, but we make no warranties regarding specific clinical capabilities, regulatory compliance status, or financial outcomes of third-party facilities. Our liability is limited to the fees paid for our direct services.</p>
-
-        <h2>6. Confidentiality</h2>
-        <p>Information you share with us is treated as confidential and used solely for the purpose of assisting with your placement or operational needs. See our <a href="privacy.html" style="color: var(--gold);">Privacy Policy</a> for details.</p>
-
-        <h2>7. Contact</h2>
-        <p>DFFB Senior Living<br>
-        1712 19th Street Suite 216<br>
-        Bakersfield, CA 93301<br>
-        (661) 448-2386<br>
-        info@dffbmanagementgroup.com</p>
-    </div>
-
-    <footer>
-        <div style="margin-bottom: 20px;">
-            <a href="index.html">Home</a>
-            <a href="about.html">Our Approach</a>
-            <a href="partner.html">For Facilities</a>
-            <a href="privacy.html">Privacy Policy</a>
-            <a href="terms.html">Terms</a>
+        <div class="footer-bottom">
+            <p class="footer-links-row">
+                <a href="https://linktr.ee/DFFB.MANAGEMENTGROUP" target="_blank" rel="noopener">Community Outreach Connection</a>
+            </p>
+            <p class="footer-legal"><a href="privacy.html">Privacy</a><span class="footer-dot"> · </span><a href="terms.html">Terms</a></p>
+            <p class="footer-copy">© 2026 DFFB Management Group. All rights reserved.</p>
+            <p class="footer-powered">Powered by <a href="https://coaibakersfield.com" target="_blank" rel="noopener noreferrer">coaibakersfield.com</a></p>
         </div>
-        <p>© 2025 DFFB Management Group. All Rights Reserved.</p>
     </footer>
-
+    <script>
+      (function () {
+        const headerInner = document.querySelector(".header-inner");
+        const navToggle = document.querySelector(".nav-toggle");
+        if (!headerInner || !navToggle) return;
+        navToggle.addEventListener("click", function () {
+          const open = headerInner.classList.toggle("menu-open");
+          navToggle.setAttribute("aria-expanded", String(open));
+        });
+      })();
+    </script>
 </body>
 </html>
